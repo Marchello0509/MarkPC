@@ -1,0 +1,225 @@
+@mixin FlexElement($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin ForBlocks ($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+.main {
+    display: flex;
+    &_block1 {
+        width: 800px;
+        height: 715px;
+        background: url('./img/photo2021-09-1315-02-39_613f445c6bb99\ 1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &_logo {
+            display: flex;
+            margin-top: 15px;
+            margin-left: 15px;
+            &_markpc {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;   
+                margin-left: 6px;          
+            }
+        }
+    }
+    &_block2 {
+        width: 800px;
+        height: 715px;
+        background: #F5F1F1;
+        &_fortexts {
+            @include ForBlocks(center);
+            &_texts {
+                margin-top: 100px;
+                width: 392px;
+                height: 57px;
+                &_forp1 {
+                    @include ForBlocks(center);
+                    &_p1 {
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;             
+                    }
+                }
+                &_forp2 {
+                    @include ForBlocks(center);
+                    &_p2 {
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;           
+                    }
+                }
+            }
+        }
+        &_forinput {
+            @include ForBlocks(center);
+            &_inputs {
+                margin-top: 55px;
+                width: 350px;
+                height: 215px;
+                &_p1 {
+                    color: var(--700, #4A5568);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                 
+                }
+                &_inp1 {
+                    margin-top: 10px;
+                    padding: 17px 163px 17px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #E8E8E8;
+                    color: var(--800, #2D3748);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                &_p2 {
+                    margin-top: 11px;
+                    color: var(--700, #4A5568);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                 
+                }
+                &_inp2 {
+                    margin-top: 10px;
+                    padding: 17px 163px 17px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #E8E8E8;
+                    color: var(--800, #2D3748);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                &_block {
+                    display: flex;
+                    margin-top: 15px;
+                    &_chekbox {
+                        cursor: pointer;
+                    }
+                    &_p1 {
+                        color: var(--800, #2D3748);
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    &_a {
+                        margin-top: 2px;
+                        margin-left: 72px;
+                        text-decoration: none;
+                        color: #6F44B5;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        cursor: pointer;
+                        border-bottom: 2px solid #6f44b500;
+                        transition-duration: 0.6s;
+                        &:hover {
+                            transition-duration: 0.6s;
+                            border-bottom: 2px solid #6F44B5;
+                        }
+                    }
+                }
+            }
+        }
+        &_forbtn1 {
+            @include ForBlocks(center);
+            &_btn {
+                width: 347px;
+                height: 50px;
+                border-radius: 5px;
+                background: linear-gradient(180deg, #000 0%, #AE09FB 100%);     
+                border: none;    
+                cursor: pointer;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;        
+                margin-top: 25px;    
+            }
+        }
+        &_forbtn2 {
+            @include ForBlocks(center);
+            &_btn {
+                @include FlexElement(center,center);
+                margin-top: 12px;
+                display: flex;
+                width: 347px;
+                height: 50px;
+                border-radius: 5px;
+                column-gap: 11px;
+                background: linear-gradient(180deg, #FFEA2D 0%, #F11616 100%);
+                border: none;    
+                cursor: pointer;
+                &_p {
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal; 
+                }
+            }
+        }
+        &_fordh {
+            @include ForBlocks(center);
+            margin-top: 100px;
+            &_dh {
+                display: flex;
+                column-gap: 5px;
+                &_p1 {
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                 
+                }
+                &_a {
+                    color: #6F44B5;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border-bottom: 2px solid #6f44b500;
+                    transition-duration: 0.6s;
+                    &:hover {
+                        transition-duration: 0.6s;
+                        border-bottom: 2px solid #6F44B5;
+                    }             
+                }
+            }
+        }
+    }
+}

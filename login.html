@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkPC - Login</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="FavicMark/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FavicMark/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FavicMark/favicon-16x16.png">
+    <link rel="manifest" href="FavicMark/site.webmanifest">
+    <link rel="mask-icon" href="FavicMark/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <main class="main">
+        <div class="main_block1">
+            <div class="main_block1_logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                    <path d="M32.6747 2.6799H2.32531C1.04036 2.6799 0 3.72136 0 5.00521V24.4172C0 25.701 1.04036 26.7425 2.32531 26.7425H15.0391V27.2605C15.0391 28.5444 13.9987 29.5858 12.7137 29.5858H9.29688V32.3202H14.3H20.7001H25.7031V29.5858H22.2862C21.0013 29.5858 19.9609 28.5444 19.9609 27.2605V26.7425H32.6747C33.9596 26.7425 35 25.7011 35 24.4172V5.00521C35 3.72136 33.9596 2.6799 32.6747 2.6799ZM31.7188 21.5919C31.7188 22.0203 31.3716 22.3674 30.9433 22.3674H4.05672C3.62838 22.3674 3.28125 22.0203 3.28125 21.5919V6.73662C3.28125 6.30828 3.62838 5.96115 4.05672 5.96115H30.9433C31.3717 5.96115 31.7188 6.30828 31.7188 6.73662V21.5919H31.7188Z" fill="white"/>
+                </svg>
+                <p class="main_block1_logo_markpc">MarkPC</p>
+            </div>
+        </div>
+        <div id="block" class="main_block2">
+            <div class="main_block2_fortexts">
+                <div class="main_block2_fortexts_texts">
+                    <div class="main_block2_fortexts_texts_forp1">
+                        <p class="main_block2_fortexts_texts_forp1_p1">С возвращением!</p>
+                    </div>
+                    <div class="main_block2_fortexts_texts_forp2">
+                        <p class="main_block2_fortexts_texts_forp2_p2">Войдите в свой аккаунт</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_block2_forinput">
+                <div class="main_block2_forinput_inputs">
+                    <p class="main_block2_forinput_inputs_p1">Электронная почта</p>
+                    <input id="inpEmail" class="main_block2_forinput_inputs_inp1" type="text" placeholder="forexample@gmail.com">
+                    <p class="main_block2_forinput_inputs_p2">Пароль</p>
+                    <input id="inpPass" class="main_block2_forinput_inputs_inp2" type="password" placeholder="Your password">
+                    <div class="main_block2_forinput_inputs_block">
+                        <input class="main_block2_forinput_inputs_chekbox" type="checkbox">
+                        <p class="main_block2_forinput_inputs_p1">Запомнить меня</p>
+                        <a class="main_block2_forinput_inputs_block_a" href="#">Забыл пароль?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_block2_forbtn1">
+                <button id="btnLog" class="main_block2_forbtn1_btn">Войти</button>
+            </div>
+            <div class="main_block2_forbtn2">
+                <button class="main_block2_forbtn2_btn">
+                    <img class="main_block2_forbtn2_btn_img" src="./img/iconfinder_Google_1298745 1.png" alt="google">
+                    <p id="btnGoogle" class="main_block2_forbtn2_btn_p">Войти с помощью Google</p>
+                </button>
+            </div>
+            <div class="main_block2_fordh">
+                <div class="main_block2_fordh_dh">
+                    <p class="main_block2_fordh_dh_p1">Нету аккаунта?</p>
+                    <a class="main_block2_fordh_dh_a" href="#">Авторизуйся</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./Js/login.js"></script>
+</body>
+</html>
