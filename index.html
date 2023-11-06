@@ -11,11 +11,111 @@
     <link rel="manifest" href="FavicMark/site.webmanifest">
     <link rel="mask-icon" href="FavicMark/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header_head">
+            <a class="header_head_a" href="#">
+                <div class="header_head_a_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                        <path d="M32.6747 2.6799H2.32531C1.04036 2.6799 0 3.72136 0 5.00521V24.4172C0 25.701 1.04036 26.7425 2.32531 26.7425H15.0391V27.2605C15.0391 28.5444 13.9987 29.5858 12.7137 29.5858H9.29688V32.3202H14.3H20.7001H25.7031V29.5858H22.2862C21.0013 29.5858 19.9609 28.5444 19.9609 27.2605V26.7425H32.6747C33.9596 26.7425 35 25.7011 35 24.4172V5.00521C35 3.72136 33.9596 2.6799 32.6747 2.6799ZM31.7188 21.5919C31.7188 22.0203 31.3716 22.3674 30.9433 22.3674H4.05672C3.62838 22.3674 3.28125 22.0203 3.28125 21.5919V6.73662C3.28125 6.30828 3.62838 5.96115 4.05672 5.96115H30.9433C31.3717 5.96115 31.7188 6.30828 31.7188 6.73662V21.5919H31.7188Z" fill="black"/>
+                    </svg>         
+                    <p class="header_head_a_logo_p">MarkPC</p>  
+                </div>
+            </a>
+            <nav class="header_head_nav">
+                <ul class="header_head_nav_ul">
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Детали</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Сборка</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Ноутбуки</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Готовые сборки</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Ключи Windows</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">SSD & HDD</a>
+                    </li>
+                    <li class="header_head_nav_ul_li">
+                        <a class="header_head_nav_ul_li_a" href="#">Периферия</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_head_btns">
+                <button class="header_head_btns_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M8.22475 2.46676C7.88729 1.58088 7.07019 1 6.16153 1H3.10521C1.94253 1 1 1.98945 1 3.21028C1 13.5874 9.01178 22 18.8945 22C20.0571 22 20.9994 21.0102 20.9994 19.7894L21 16.5797C21 15.6254 20.4469 14.7677 19.6033 14.4133L16.6739 13.1834C15.9161 12.8651 15.0533 13.0084 14.4262 13.5571L13.6702 14.2191C12.7873 14.9917 11.4882 14.9302 10.6755 14.0769L8.5467 11.8396C7.73402 10.9862 7.67396 9.62318 8.40974 8.69613L9.04011 7.90235C9.56265 7.24394 9.70031 6.33769 9.39721 5.54194L8.22475 2.46676Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="header_head_btns_btn2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8739 5.25017H18.9C20.0598 5.25017 21 6.19036 21 7.35015V9.45013C21 10.3321 20.4562 11.0871 19.6856 11.3982C19.6892 11.4484 19.6911 11.499 19.6911 11.5501C19.6911 11.7033 19.6743 11.8561 19.641 12.0057L18.0077 19.3556C17.7942 20.3164 16.942 21 15.9577 21H5.04228C4.05801 21 3.20581 20.3164 2.99229 19.3556L1.35895 12.0057C1.31349 11.8011 1.29955 11.5968 1.31391 11.398C0.543556 11.0869 0 10.332 0 9.45013V7.35015C0 6.19036 0.940202 5.25017 2.1 5.25017H5.12606L7.46085 0.580649C7.72019 0.0619777 8.3509 -0.148256 8.86957 0.11108C9.38825 0.370416 9.59849 1.00112 9.33915 1.51979L7.47394 5.25017H13.5261L11.6609 1.51979C11.4015 1.00112 11.6117 0.370416 12.1304 0.11108C12.6491 -0.148256 13.2798 0.0619777 13.5391 0.580649L15.8739 5.25017ZM16.8002 7.35015C16.7999 7.73501 16.5872 8.10545 16.2196 8.28929C15.7009 8.54862 15.0702 8.33839 14.8109 7.81972L14.5761 7.35015H6.42394L6.18915 7.81972C5.92981 8.33839 5.2991 8.54862 4.78043 8.28929C4.41275 8.10545 4.20007 7.73501 4.19977 7.35015H2.1V9.45013H18.9V7.35015H16.8002ZM3.40895 11.5501L5.04228 18.9H15.9577L17.5911 11.5501H3.40895Z" fill="black"/>
+                    </svg>
+                </button>
+                <button class="header_head_btns_btn3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M11 0C4.928 0 0 4.928 0 11C0 17.072 4.928 22 11 22C17.072 22 22 17.072 22 11C22 4.928 17.072 0 11 0ZM11 3.3C12.826 3.3 14.3 4.774 14.3 6.6C14.3 8.426 12.826 9.9 11 9.9C9.174 9.9 7.7 8.426 7.7 6.6C7.7 4.774 9.174 3.3 11 3.3ZM11 18.92C8.25 18.92 5.819 17.512 4.4 15.378C4.433 13.189 8.8 11.99 11 11.99C13.189 11.99 17.567 13.189 17.6 15.378C16.181 17.512 13.75 18.92 11 18.92Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_slider">
+            <button id="btn1" class="main_slider_btn1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="82" viewBox="0 0 96 82" fill="none">
+                    <path d="M77.6 71.75L40.8 41L77.6 9.56667L66.4 0L18.4 41L66.4 82L77.6 71.75Z" fill="black"/>
+                </svg>
+            </button>
+            <img id="sliderImg" class="main_slider_img" src="./img/mb.png" alt="">
+            <button id="btn2" class="main_slider_btn2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="82" viewBox="0 0 96 82" fill="none">
+                    <path d="M18.4 71.75L55.2 41L18.4 9.56667L29.6 0L77.6 41L29.6 82L18.4 71.75Z" fill="black"/>
+                </svg>
+            </button>
+        </div>
+        <div class="main_blocks">
+            <div class="main_blocks_block1">
+                <img class="main_blocks_block1_img" src="./img/mb.png" alt="">
+                <p class="main_blocks_block1_p1">Материнская плата Gigabyte H410M S2H V2 (s1200, Intel H470, PCI-Ex16)</p>
+                <p class="main_blocks_block1_p2">2 449₴</p>
+            </div>
+            <div class="main_blocks_block2">
+                <img class="main_blocks_block2_img" src="./img/pc.png" alt="">
+                <p class="main_blocks_block2_p1">Компьютер Artline Gaming (X43v31)</p>
+                <p class="main_blocks_block2_p2">2 449₴</p>
+            </div>
+            <div class="main_blocks_block3">
+                <img class="main_blocks_block3_img" src="./img/video.png" alt="">
+                <p class="main_blocks_block3_p1">Видеокарта Gigabyte RTX 3050</p>
+                <p class="main_blocks_block3_p2">10 999₴</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footer_a" href="#">
+            <div class="footer_a_logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                    <path d="M32.6747 2.6799H2.32531C1.04036 2.6799 0 3.72136 0 5.00521V24.4172C0 25.701 1.04036 26.7425 2.32531 26.7425H15.0391V27.2605C15.0391 28.5444 13.9987 29.5858 12.7137 29.5858H9.29688V32.3202H14.3H20.7001H25.7031V29.5858H22.2862C21.0013 29.5858 19.9609 28.5444 19.9609 27.2605V26.7425H32.6747C33.9596 26.7425 35 25.7011 35 24.4172V5.00521C35 3.72136 33.9596 2.6799 32.6747 2.6799ZM31.7188 21.5919C31.7188 22.0203 31.3716 22.3674 30.9433 22.3674H4.05672C3.62838 22.3674 3.28125 22.0203 3.28125 21.5919V6.73662C3.28125 6.30828 3.62838 5.96115 4.05672 5.96115H30.9433C31.3717 5.96115 31.7188 6.30828 31.7188 6.73662V21.5919H31.7188Z" fill="black"/>
+                </svg>         
+                <p class="footer_a_logo_p">MarkPC</p>  
+            </div>
+        </a>
+        <p class="footer_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lorem turpis. Ut sollicitudin leo tortor, at aliquam lacus tincidunt eleifend. Aenean in posuere sem. Nunc posuere metus sed dolor efficitur ornare. Donec est ante, blandit dignissim nisl quis, vestibulum porta dui. Praesent convallis lectus mollis consequat aliquet.</p>
+    </footer>
     <script src="./Js/script.js"></script>
 </body>
 </html>

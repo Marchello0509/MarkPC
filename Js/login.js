@@ -24,6 +24,7 @@ htmlEl.btnLog.addEventListener('click', () => {
             setTimeout(() => {
                 htmlEl.block.style.backgroundColor = "#F5F1F1";
             }, 1000);
+            window.location.href = './index.html' 
         } else {
             console.log(false)
             htmlEl.block.style.backgroundColor = "rgb(250, 33, 0)";

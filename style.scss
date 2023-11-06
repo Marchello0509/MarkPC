@@ -1,0 +1,223 @@
+@mixin FlexElement($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin ForBlocks ($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+.header {
+    width: 100%;
+    height: 83px;
+    background: #F5F1F1;
+    &_head {
+        @include FlexElement(space-between, center);
+        margin: 0 auto;
+        width: 1273px;
+        height: 38px;    
+        &_a {
+            text-decoration: none;
+            &_logo {
+                margin-top: 40px;
+                display: flex; 
+                &_p {
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;          
+                }
+            }
+        }
+        &_nav {
+            width: 755px;
+            height: 13px;
+            margin-top: 35px;
+            &_ul {
+                @include FlexElement(space-between, center);
+                &_li {
+                    list-style: none;
+                    &_a {
+                        color: #000;
+                        font-family: Montserrat;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-decoration: none;
+                        transition-duration: 0.6s;
+                        border-bottom: 1px solid #00000000;
+                        &:hover {
+                            transition-duration: 0.6s;
+                            border-bottom: 1px solid #000000;
+                        }
+                    }
+                }
+            }         
+        }
+        &_btns {
+            display: flex;
+            margin-top: 40px;
+            column-gap: 12px;
+            &_btn {
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+            &_btn2 {
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+            &_btn3 {
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
+.main {
+    &_slider {
+        @include FlexElement(center,center);
+        column-gap: 15px;
+        margin-top: 67px;
+        &_btn1 {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        &_btn2 {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+    &_blocks {
+        @include ForBlocks(center);
+        margin-top: 50px;
+        column-gap: 225px;
+        &_block1 {
+            width: 239px;
+            height: 460px;
+            &_img {
+                width: 213px;
+                height: 250px;            
+            }
+            &_p1 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;        
+                width: 237px;
+                height: 150px;
+                margin-top: 12px;
+            }
+            &_p2 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 15px;
+            }
+        }
+        &_block2 {
+            width: 239px;
+            height: 460px;
+            &_img {
+                width: 213px;
+                height: 250px;            
+            }
+            &_p1 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;        
+                width: 237px;
+                height: 150px;
+                margin-top: 12px;
+            }
+            &_p2 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 15px;
+            }
+        }
+        &_block3 {
+            width: 239px;
+            height: 460px;
+            &_img {
+                margin-top: 50px;
+            }
+            &_p1 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;        
+                width: 237px;
+                height: 150px;
+                margin-top: 112px;
+            }
+            &_p2 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+.footer {
+    @include FlexElement(center,center);
+    margin-top: 100px;
+    height: 206.272px;
+    width: 100%;
+    column-gap: 90px;
+    background: #F5F1F1;
+    &_a {
+        text-decoration: none;
+        &_logo {
+            margin-top: 40px;
+            display: flex; 
+            &_p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;          
+            }
+        }
+    }
+    &_p {
+        margin-top: 65px;
+        color: #000;
+        width: 1004px;
+        height: 111px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;       
+    }
+}
